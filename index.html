@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HELLO! WELCOME TO MY PERSONAL WEBSITE</title>
+    <title>HELLO! WELL COME TO MY PERSONAL WEBSITE</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <style>
         body {
-            background-color: #e0f2fe; /* Light blue */
-            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #e0f2fe; /* Light blue / bgcolor="lightblue" */
+            font-family: Arial, Helvetica, sans-serif;
             padding: 0;
             margin: 0;
-            color: #1e293b;
+            color: #111;
             line-height: 1.6;
+            scroll-behavior: smooth;
         }
 
-        /* Header / Navigation */
+        /* Navigation Menu */
         nav {
             background: #1e3a8a; /* Dark Blue */
             padding: 15px;
@@ -38,11 +39,11 @@
 
         .container { padding: 40px 10%; }
 
-        h1 { color: #1e3a8a; font-size: 32px; text-align: center; }
-        h2 { color: #92400e; font-size: 26px; border-bottom: 2px solid #92400e; display: inline-block; }
+        h1 { color: darkblue; font-size: 32px; text-align: center; }
+        h2 { color: brown; font-size: 26px; border-bottom: 1px solid #aaa; padding-bottom: 5px; }
 
         /* Media Styling */
-        img { border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: 10px; }
+        img { border-radius: 10px; margin: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
         .gallery img { transition: transform 0.3s; cursor: pointer; }
         .gallery img:hover { transform: scale(1.05); }
 
@@ -51,39 +52,28 @@
             border-collapse: collapse;
             width: 100%;
             background: white;
-            margin-top: 20px;
-            border-radius: 10px;
-            overflow: hidden;
+            margin-bottom: 20px;
         }
-        th { background: #1e3a8a; color: white; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th, td { border: 1px solid #444; padding: 10px; text-align: left; }
+        th { background-color: #f2f2f2; }
 
         /* Form */
         .contact-box { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        form input, form textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; }
-        form button { padding: 12px 30px; background: #1e3a8a; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
+        form input, form textarea { width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        form button { padding: 10px 20px; background: darkblue; color: white; border: none; cursor: pointer; font-weight: bold; border-radius: 5px; width: 100%; }
         form button:hover { background: #1d4ed8; }
 
-        /* Social Media Icons */
-        .social-links { text-align: center; padding: 20px; background: #f1f5f9; border-radius: 15px; margin-top: 30px; }
-        .social-links a { 
-            font-size: 1.5rem; margin: 0 15px; text-decoration: none; 
-            padding: 10px; border-radius: 50%; color: white; transition: 0.3s;
-        }
-        .fb-color { background: #1877F2; }
-        .tg-color { background: #0088CC; }
-        .tk-color { background: #000000; }
-        .yt-color { background: #FF0000; }
-        .social-links a:hover { opacity: 0.8; transform: translateY(-5px); }
+        .section { margin-bottom: 50px; }
+        blockquote { font-style: italic; background: #fff; padding: 20px; border-left: 5px solid darkblue; margin: 10px 0; }
 
-        .section { margin-bottom: 60px; padding-top: 20px; }
-        blockquote { font-style: italic; background: #fff; padding: 20px; border-left: 5px solid #1e3a8a; margin: 10px 0; }
+        .social-links { text-align: center; padding: 20px; background: #f1f5f9; border-radius: 15px; margin-top: 30px; }
+        .social-links a { font-size: 1.5rem; margin: 0 15px; text-decoration: none; color: #1e3a8a; }
     </style>
 </head>
-<body>
+<body id="top">
 
     <nav>
-        <a href="#top">Home</a>
+        <a href="#home">Home</a>
         <a href="#bio">Biography</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
@@ -91,119 +81,179 @@
         <a href="#media">Media</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
+        <a href="#testimonials">Testimonies</a>
     </nav>
 
     <div class="container">
         
-        <section id="top" class="section" style="text-align: center;">
-            <h1>Hi, I am Abera Ejara</h1>
-            <p><strong>Web Developer | Java Programmer | IT Student</strong></p>
-            <img src="Snapchat-322698432.jpg" alt="Profile" height="400" width="300">
+        <section id="home" class="section" style="text-align: center;">
+            <h1>Hi, I am abera ejara</h1>
+            <p>Web Developer | Java Programmer | Student</p>
+            <img src="Snapchat-322698432.jpg" class="profile-pic" height="400" width="300">
             <br>
-            <a href="#contact" style="background: #1e3a8a; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">ANAA DHUFU</a>
+            <a href="#contact" style="background: darkblue; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">ANAA DHUFU</a>
         </section>
+
+        <hr>
 
         <div class="section" id="bio">
             <h2>Biography</h2>
-            <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
-                <img src="1769929531831.jpg" width="300">
-                <div style="flex: 1; min-width: 300px;">
-                    <p>My name is <b>Abera Ejara</b>. I am a 3rd-year IT student at Arsi University (AU). I was born and raised in Ambo, West Shewa, Oromia, Ethiopia.</p>
-                    <p>I have experience in <u>HTML, CSS, C++, beginner JavaScript, Multimedia Editing, and Computer Maintenance</u>. My ambition is to build creative technology to solve local problems and reduce dependence on human labor.</p>
-                </div>
-            </div>
+            <img src="1769929531831.jpg" width="300" style="float: top;">
+            <p>
+                <b>My name is Abera Ejara. IT 3RD YEAR at AU. I was born and raised in Ambo, West Shewa Zone, Oromia Region, Ethiopia.</b>
+            </p>
+            <p>
+                During my childhood, I helped my family by herding cattle and farming. I enjoyed working with my family and spending time playing with my friends. These experiences taught me responsibility, teamwork, and the value of hard work.
+            </p>
+            <p>
+                I started my education at a young age and continued with strong dedication. After successfully completing Grade 12, I joined Arsi University to pursue higher education. Today, I am working hard to develop my knowledge and skills so that I can build a better future for myself and contribute positively to my community.
+            </p>
+            <p>
+                I am passionate about learning new technologies and improving my abilities in web development and programming. I enjoy editing multimedia content and learning modern IT tools.
+            </p>
+            <p>
+                I have experience in <u>HTML, CSS, C++, beginner-level JavaScript, Multimedia Editing, and Computer Maintenance, graphics design, Video editing and photo editing</u>. I designed this website as part of my web development training project.
+            </p>
+            <p>
+                <i>“My future ambition or my interest or my hobbies is To build creative and functional websites and software application, and develop technology to solve the problems existing in our country and to reduce the dependence on human labor.”</i>
+            </p>
         </div>
 
+        <hr>
+
         <div class="section" id="education">
-            <h2>Academic History</h2>
+            <h2>Academic History (Table)</h2>
             <table>
-                <tr><th>Year</th><th>Institution</th><th>Achievement</th></tr>
-                <tr><td>2021</td><td>High School</td><td>Preparatory Completed</td></tr>
-                <tr><td>2023</td><td>Arsi University</td><td>IT Student (Active)</td></tr>
+                <tr>
+                    <th>Year</th>
+                    <th>Institution</th>
+                    <th>Achievement</th>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>High School</td>
+                    <td>Preparatory Completed</td>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td>Arsi University</td>
+                    <td>IT Student</td>
+                </tr>
             </table>
         </div>
 
+        <hr>
+
         <div class="section" id="skills">
             <h2>My Skills</h2>
-            <div style="display: flex; gap: 40px; flex-wrap: wrap;">
-                <ul>
-                    <li>Web Design (HTML & CSS)</li>
-                    <li>Graphic Design</li>
-                    <li>Computer Maintenance</li>
-                    <li>Video Editing</li>
-                </ul>
-                <ul>
-                    <li>Problem Solving</li>
-                    <li>Creative Writing</li>
-                    <li>Teamwork</li>
-                    <li>Academic Writing</li>
-                </ul>
-            </div>
+            <ul>
+                <li>Web Design (HTML & CSS)</li>
+                <li>Graphic Design</li>
+                <li>Computer Maintenance</li>
+                <li>Video Editing</li>
+            </ul>
+            <ol>
+                <li>Communication Skills</li>
+                <li>Teamwork</li>
+                <li>Creativity</li>
+            </ol>
+            <h3>and ALTHOUGH</h3>
+            <ul>
+                <li>Ability to independently analyze and solve problems.</li>
+                <li>Writing creative stories and short novels.</li>
+                <li>Writing articles and essays.</li>
+                <li>Composing poems and unique songs.</li>
+                <li>Strong intermediate academic writing skills.</li>
+            </ul>
         </div>
+
+        <hr>
 
         <div class="section" id="gallery">
             <h2>Gallery</h2>
+            <p>Some sample works and pictures:</p>
             <div class="gallery">
-                <img src="Gemini_Generated_Image_3jcogi3jcogi3jco (1) (1).png" width="200">
+                <img src="Gemini_Generated_Image_3jcogi3jcogi3jco (1) (1).png" width="220">
                 <img src="AIwallpaper20250927104551884.jpg" width="200">
-                <img src="IMG_20250806_162355.jpg" width="200">
-                <img src="AIwallpaper20250927104622052.jpg" width="200">
-                <img src="IMG_20251110_083050.jpg" width="200">
-                <img src="AIwallpaper20250927104751606.jpg" width="200">
+                <img src="IMG_20250806_162355.jpg" width="220">
+                <img src="AIwallpaper20250927104622052.jpg" width="220">
+                <img src="IMG_20251110_083050.jpg" width="220">
+                <img src="file_00000000daa071f880862e1a50ad77e0 (1).png" width="220">
+                <img src="AIwallpaper20250927104751606.jpg" width="220">
             </div>
         </div>
 
+        <hr>
+
         <div class="section" id="media">
             <h2>Media Showcases</h2>
-            <h3>Audios</h3>
+            <h3>My Audio</h3>
             <audio controls><source src="11751.mp3"></audio>
             <audio controls><source src="1447.mp3"></audio>
             <audio controls><source src="504.mp3"></audio>
 
-            <h3>Videos</h3>
+            <h3>My Video</h3>
             <video width="320" controls><source src="5f246bbae07bea06aed6189af5acbcdc.mp4"></video>
             <video width="320" controls><source src="VID_20260131_221833_742.mp4"></video>
         </div>
 
+        <hr>
+
+        <div class="section" id="services">
+            <h2>Services I Provide</h2>
+            <ul>
+                <li>Website Development</li>
+                <li>Graphic Design</li>
+                <li>IT Support</li>
+                <li>Multimedia Design</li>
+            </ul>
+        </div>
+
+        <hr>
+
         <div class="section" id="contact">
-            <h2>Contact & Connect</h2>
+            <h2>Contact Me</h2>
             <div class="contact-box">
-                <form>
-                    <label>Your Name</label>
-                    <input type="text" placeholder="Enter name">
-                    <label>Email Address</label>
-                    <input type="email" placeholder="example@gmail.com">
+                <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
+                    <label>abera ejara</label>
+                    <input type="text" name="name" required>
+                    <label>aberaejara587@gmail.com</label>
+                    <input type="email" name="email" required>
                     <label>Message</label>
-                    <textarea rows="4" placeholder="How can I help you?"></textarea>
-                    <button type="submit">Submit Message</button>
+                    <textarea name="message" rows="5" required></textarea>
+                    <button type="submit">Submit</button>
                 </form>
             </div>
-
+            <p>Or contact me directly via email: <a href="mailto:aberaejara587@gmail.com">Send Email</a></p>
+            
             <div class="social-links">
-                <h3>Find Me Online</h3>
-                <a href="https://www.facebook.com/abera.ejara.9" target="_blank" class="fb-color"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://t.me/Abejao23" target="_blank" class="tg-color"><i class="fab fa-telegram-plane"></i></a>
-                <a href="https://tiktok.com/@aberaejara" target="_blank" class="tk-color"><i class="fab fa-tiktok"></i></a>
-                <a href="https://youtube.com" target="_blank" class="yt-color"><i class="fab fa-youtube"></i></a>
+                <h2>Connect With Me</h2>
+                <p><strong>Location:</strong> Addis Ababa, Ethiopia</p>
+                <a href="https://www.facebook.com/abera.ejara.9" target="_blank"><i class="fab fa-facebook"></i> Facebook</a> |
+                <a href="https://t.me/Abejao23" target="_blank"><i class="fab fa-telegram"></i> Telegram</a> |
+                <a href="https://tiktok.com/@aberaejara" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a> |
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
             </div>
         </div>
 
-        <section class="section" id="testimonies">
+        <hr>
+
+        <section id="testimonials" class="section">
             <h2>Testimonials</h2>
-            <blockquote>“Abera is a kind and compassionate person who is always ready to help others. He is highly committed and dependable.”</blockquote>
+            <blockquote>“abera is a kind and compassionate person who is always ready to help others. He is highly committed and dependable.”</blockquote>
             <blockquote>“He has a positive attitude, strong dedication, and works well with everyone.”</blockquote>
         </section>
 
-        <footer style="text-align: center; padding: 20px; color: #64748b;">
-            <hr>
-            <p>&copy; 2026 Abera Ejara | <a href="#top">Back to Top</a></p>
-        </footer>
+        <hr>
+        <div style="text-align: center; padding: 20px;">
+            <a href="#top">Back to Top</a>
+        </div>
     </div>
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js');
-  }
-</script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+    </script>
 </body>
-</html>    
-                                                                                                 </html>
+                      </html>
