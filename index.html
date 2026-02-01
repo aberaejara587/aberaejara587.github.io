@@ -199,7 +199,11 @@
             <p>&copy; 2026 Abera Ejara | <a href="#top">Back to Top</a></p>
         </footer>
     </div>
-
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  }
+</script>
 </body>
 </html>  }
 
