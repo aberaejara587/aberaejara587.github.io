@@ -44,6 +44,7 @@
 
         /* Media Styling */
         img { border-radius: 10px; margin: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .gallery { display: flex; flex-wrap: wrap; justify-content: center; }
         .gallery img { transition: transform 0.3s; cursor: pointer; }
         .gallery img:hover { transform: scale(1.05); }
 
@@ -57,10 +58,10 @@
         th, td { border: 1px solid #444; padding: 10px; text-align: left; }
         th { background-color: #f2f2f2; }
 
-        /* Form */
-        .contact-box { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        form input, form textarea { width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
-        form button { padding: 10px 20px; background: darkblue; color: white; border: none; cursor: pointer; font-weight: bold; border-radius: 5px; width: 100%; }
+        /* Form Styling */
+        .contact-box { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        form input, form textarea { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        form button { padding: 12px; background: darkblue; color: white; border: none; cursor: pointer; font-weight: bold; border-radius: 5px; width: 100%; transition: 0.3s; }
         form button:hover { background: #1d4ed8; }
 
         .section { margin-bottom: 50px; }
@@ -81,7 +82,6 @@
         <a href="#media">Media</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
-        <a href="#testimonials">Testimonies</a>
     </nav>
 
     <div class="container">
@@ -98,7 +98,7 @@
 
         <div class="section" id="bio">
             <h2>Biography</h2>
-            <img src="1769929531831.jpg" width="300" style="float: top;">
+            <img src="1769929531831.jpg" width="300" style="display: block; margin-bottom: 20px;">
             <p>
                 <b>My name is Abera Ejara. IT 3RD YEAR at AU. I was born and raised in Ambo, West Shewa Zone, Oromia Region, Ethiopia.</b>
             </p>
@@ -171,7 +171,6 @@
 
         <div class="section" id="gallery">
             <h2>Gallery</h2>
-            <p>Some sample works and pictures:</p>
             <div class="gallery">
                 <img src="Gemini_Generated_Image_3jcogi3jcogi3jco (1) (1).png" width="220">
                 <img src="AIwallpaper20250927104551884.jpg" width="200">
@@ -214,17 +213,19 @@
         <div class="section" id="contact">
             <h2>Contact Me</h2>
             <div class="contact-box">
-                <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
-                    <label>abera ejara</label>
-                    <input type="text" name="name" required>
-                    <label>aberaejara587@gmail.com</label>
-                    <input type="email" name="email" required>
-                    <label>Message</label>
-                    <textarea name="message" rows="5" required></textarea>
-                    <button type="submit">Submit</button>
+                <form action="https://formspree.io/f/xojljpgy" method="POST">
+                    <label>Your Name:</label>
+                    <input type="text" name="name" required placeholder="Abera Ejara">
+                    
+                    <label>Your Email:</label>
+                    <input type="email" name="email" required placeholder="aberaejara587@gmail.com">
+                    
+                    <label>Message:</label>
+                    <textarea name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                    
+                    <button type="submit">Send Message</button>
                 </form>
             </div>
-            <p>Or contact me directly via email: <a href="mailto:aberaejara587@gmail.com">Send Email</a></p>
             
             <div class="social-links">
                 <h2>Connect With Me</h2>
@@ -232,7 +233,7 @@
                 <a href="https://www.facebook.com/abera.ejara.9" target="_blank"><i class="fab fa-facebook"></i> Facebook</a> |
                 <a href="https://t.me/Abejao23" target="_blank"><i class="fab fa-telegram"></i> Telegram</a> |
                 <a href="https://tiktok.com/@aberaejara" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a> |
-                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+                <a href="mailto:aberaejara587@gmail.com"><i class="fas fa-envelope"></i> Email</a>
             </div>
         </div>
 
@@ -256,4 +257,4 @@
         }
     </script>
 </body>
-                      </html>
+</html>
