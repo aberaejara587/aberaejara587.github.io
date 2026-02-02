@@ -1,0 +1,15 @@
+name: My AI Assistant
+on: [push] # This triggers the AI every time you save code
+permissions:
+  contents: read
+jobs:
+  ai-task:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      - name: Ask AI for Help
+        env:
+          AI_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          echo "AI assistant is now active for this repository!"
